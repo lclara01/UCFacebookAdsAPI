@@ -23,24 +23,23 @@ Example from Facebook Meta for Develpers:   https://developers.facebook.com/apps
 Modified by L Clarage for Tufts University, 9/21/22.
 """
 
-
 """
 WHAT I RUN IN JUPYTER LABS ON MY WINDOWS MACHINE: 
        %run Retrieve_UC_Facebook_CampaignData.py
 """  
-
-
+#-----------------------------------------------------------------------------
 
 
 from facebook_business.adobjects.adaccount import AdAccount
 from facebook_business.adobjects.adsinsights import AdsInsights
 from facebook_business.api import FacebookAdsApi
 
-access_token = 'EAAIfTfd7yDkBAFDxI4C0FfBZCmv2Oobmxe8N9gXIEaM1o5ZBain1gHxTJTtKa1JFoFMNkpGXGJIP7Gi2BCweIhJwPpS8GiSxKRxH8pkvEsKH4n93oIz9DoRzhEUdZBblKSswFJTEDfNIna3NXAwEiuYoqKs3XOz4sWK0YiQBgOS8d4u1GYep8rVVrHDu9YZD'
+access_token = 'EAAIfTfd7yDkBAPVZAVejo7SzqlrMaoOR99QrO7PlyWnXZCmYdsfbu1aq2RNoDqwogRH6ZBph5SKaeVcqBveMAZAovec6x1ur4nYciHMjNMgRswZAXkz7Y2IELohldj27CU0gq1CgV7IU7flMjsAZBePVHC11UTVg4HLCovUY3VwzhPBwNvq1S7wlsy3N2sGbsZD'
 ad_account_id = 'act_1755149518150648'
 app_secret = '41705096fcc4faeacdb32b8c22b9b2af'
 app_id = '597369678448697'
 FacebookAdsApi.init(access_token=access_token)
+
 
 fields = [
     'account_name',
